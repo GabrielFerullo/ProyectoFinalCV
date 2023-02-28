@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto - Curriculum Vitae</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/909/909212.png">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" value="summary">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Programador" />
+  <meta property="og:type" content="Curriculum Vitae" />
+  <meta property="og:url" content=" http://www.example.com" />
+  <meta property="og:image" content=" http://example.com/image.jpg" />
+  <meta property="og:description" content="Visita mi Curriculum!" />
+</head>
+
+<body onload="obtenerPerfil()">
+  <script defer src=js/script.js></script>
+  <script src="https://kit.fontawesome.com/f1164bea61.js" crossorigin="anonymous"></script>
+  <header class="header">
+    <nav id="nav" class="nav">
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#inicio" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#foto" class="nav-menu-link nav-link">Información personal</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#habilidades" class="nav-menu-link nav-link">Habilidades</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#experiencia" class="nav-menu-link nav-link">Experiencia</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#formacion" class="nav-menu-link nav-link">Formación</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#contacto" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="inicio" id="inicio">
+      <h1 id="nombre-principal"></h1>
+      <h2>Progamador web front-end</h2>
+      <button class="imprimir-Btn">Imprimir / Guardar como PDF</button>
+    </section>
+
+    <section class="foto">
+      <img id="foto" alt="foto de perfil">
+    </section>
+
+    <section class="inf-personal" id="inf-personal">
+      <h2 class="titulo-inf-personal">Informacíon personal</h2>
+      <i class="fa-solid fa-user"></i><p id="nombre"></p>
+      <i class="fa-sharp fa-regular fa-envelope"></i><p id="email"></p>
+      <i class="fa-regular fa-calendar"></i><p id="edad"></p>
+      <i class="fa-solid fa-location-dot"></i><p id="ubicacion"></p>
+      <i class="fa-solid fa-phone"></i><a id="telefono"></a>
+    </section>
+
+    
+
+    <article class="sobreMi">
+      <h2 class="tituloSobreMi">Sobre mí</h2>
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+      corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+      qui
+      officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+      distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+      placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
+      officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+      recusandae.
+      Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+      perferendis doloribus asperiores repellat.
+    </article>
+
+    <section class="habilidades" id="habilidades">
+      <h2 class="titulo-hab">Habilidades</h2>
+      <ul class="habilidades-programacion">
+
+        <li class="item-hab">
+          <i class="fab fa-html5"></i><span> HTML</span>
+          <div class="barra-progreso-container">
+            <div class="barra-progreso" style="width: 80%;">
+              <span class="barra-progreso-text">80%</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-hab">
+          <i class="fab fa-css3-alt"></i><span> CSS</span>
+          <div class="barra-progreso-container">
+            <div class="barra-progreso" style="width: 75%;">
+              <span class="barra-progreso-text">75%</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-hab">
+          <i class="fab fa-js"></i><span> Javascript</span>           
+          <div class="barra-progreso-container">
+          <div class="barra-progreso" style="width: 70%;">
+            <span class="barra-progreso-text">70%</span>
+          </div>
+        </div>
+        </li>
+
+        <li class="item-hab">
+          <i class="fab fa-github"></i><span> GitHub</span>
+          <div class="barra-progreso-container">
+            <div class="barra-progreso" style="width: 70%;">
+              <span class="barra-progreso-text">70%</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-hab">
+          <i class="fas fa-gem"></i><span> Ruby</span>
+           <div class="barra-progreso-container">
+           <div class="barra-progreso" style="width: 50%;">
+            <span class="barra-progreso-text">50%</span>
+          </div>
+        </div>
+        </li>
+
+        <li class="textOculto" id="textOculto">
+          <h3>Idiomas</h3>
+          <ul class="Idiomas">
+            <li class="item-hab">Español</li>
+            <span class="nivelIdioma">Nativo</span>
+            <li class="item-hab">Ingles</li>
+            <span class="nivelIdioma">B2</span>
+            <li class="item-hab">Italiano</li>
+            <span class="nivelIdioma">Básico</span>
+          </ul>
+        </li>
+        <button class="mostrarMas-btn" id="mostrarMas-btn">Mostrar más</button>
+      </ul>
+    </section>
+
+
+    <section class="experiencia" id="experiencia">
+      <div class="col">
+        <h2 class="titulo">Experiencia Laboral</h2>
+        <table>
+          <tr>
+            <td>
+              <h4>Argentina Programa</h4>
+              <p>Programador</p>
+            </td>
+            <td rowspan="2" class="expInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+          </tr>
+          <td class="datos">
+            <p>2022</p>
+          </td>
+          </tr>
+          <tr>
+        </table>
+        <table>
+          <tr>
+          <td>
+            <h4>Argentina Programa 4.0</h4>
+            <p>Programador</p>
+          </td>
+              <td rowspan="2" class="expInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+            </td>
+          </tr>
+          <td class="datos">
+            <p>2023</p>
+        </table>
+    </section>
+
+
+    <section class="formacion" id="formacion">
+      <i class="fa-sharp fa-solid fa-school"></i><h2 class="tituloFormacion">Formación</h2>
+      <ul class="lista-cursos">
+        <li class="item-hab">
+          <h3>Curso "SeProgramar"</h4>
+          <p>Argentina Programa</p>
+          <span class="fecha">2022</span>
+        </li>
+        <li class="item-hab">
+          <h3>Curso "Primeros pasos en el desarrollo front-end"</h3>
+          <p>Ticmas - Argentina Programa</p>
+          <span class="fecha">2023</span>
+        </li>
+        <li class="textOculto item-hab" id="textOculto">
+          <ul class="curso">
+            <li class="item-hab">
+              <h4>Curso Ingles</h3>
+              <p>Duolingo</p>
+              <span class="fecha">2020</span>
+            </li>
+            <li class="item-hab">
+              <h4>Curso AutoCAD</h3>
+              <p>U.T.N. - FRT</p>
+              <span class="fecha">2018</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button class="mostrarMas-btn" id="mostrarMas-btn">Mostrar más</button>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h3 class="tituloContacto">Contacto</h3>
+      <form class="formulario" id="formulario" action="">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" placeholder="Escribe tu nombre">
+        </div>
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="Escribe tu apellido">
+        </div>
+        <div>
+          <label for="mail">Correo electronico</label>
+          <input type="mail" id="mail" placeholder="Escribe tu correo">
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <button type="submit"> Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <button id="scrollTopBtn" class="scroll-top-btn"><i class="fa-sharp fa-solid fa-circle-chevron-up"></i></button>
+
+    <section class="redes-sociales">
+      <nav>
+        <h3 id="redes">Redes Sociales</h3>
+        <ul class="redes" id="redes">
+          <li class="red" id="red">
+            <i class="fa-brands fa-twitter"></i><a href="https://twitter.com" class="red" target="_blank"
+              rel="noopener noreferrer"> Twitter</a>
+          </li>
+          <li class="red" id="red">
+            <i class="fa-brands fa-facebook-f"></i><a href="https://facebook.com" class="red" target="_blank"
+              rel="noopener noreferrer"> Facebook</i></a>
+          </li>
+          <li class="red" id="red">
+            <i class="fa-brands fa-square-instagram"></i><a href="https://instagram.com" class="red" target="_blank"
+              rel="noopener noreferrer"> Instagram</a>
+          </li>
+          <li class="red" id="red">
+            <i class="fa-brands fa-linkedin-in"></i><a href="https://linkedin.com" class="red" target="_blank"
+              rel="noopener noreferrer"> Linkedin </a>
+          </li>
+        </ul>
+      </nav>
+
+    </section>
+  </footer>
+</body>
+</html>
